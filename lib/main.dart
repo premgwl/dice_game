@@ -8,6 +8,7 @@ void main() {
       backgroundColor: Colors.orangeAccent,
     ),
     body: DicePage(),
+    backgroundColor: Colors.teal,
   )));
 }
 
@@ -21,16 +22,16 @@ class DicePage extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: TextButton(
-              child: Image.asset('images/two.png'),
+              child: Image.asset('images/dice1.png'),
               onPressed: () => {},
             ),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Image.asset('images/two.png'),
+            child: TextButton(
+              child: Image.asset('images/dice1.png'),
+              onPressed: () => {},
             ),
-          )
+          ),
         ],
       ),
     );
